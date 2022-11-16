@@ -3,12 +3,12 @@
     include 'configServer.php';
     include 'consulSQL.php';
 
-    $nombre=consultasSQL::clean_string($_POST['name']);
-    $apellido=consultasSQL::clean_string($_POST['lastname']);
-    $direccion=consultasSQL::clean_string($_POST['andress']);
-    $fecha=consultasSQL::clean_string($_POST['date']);
-    $pass=consultasSQL::clean_string($_POST['pass1']);
-    $pass2=consultasSQL::clean_string($_POST['pass2']);
+    $nombre = filter_input(INPUT_POST, 'name');
+    $apellido=filter_input(INPUT_POST, 'lastname');
+    $direccion=filter_input(INPUT_POST, 'andress');
+    $fecha = filter_input(INPUT_POST, 'date');
+    $pass = filter_input(INPUT_POST, 'pass1');
+    $pass2 = filter_input(INPUT_POST, 'pass2');
     
     
 
