@@ -3,15 +3,13 @@
     include 'configServer.php';
     include 'consulSQL.php';
 
-    $nombre = filter_input(INPUT_POST, 'name');
-    $apellido=filter_input(INPUT_POST, 'lastname');
-    $direccion=filter_input(INPUT_POST, 'andress');
-    $fecha = filter_input(INPUT_POST, 'date');
-    $pass = filter_input(INPUT_POST, 'pass1');
-    $pass2 = filter_input(INPUT_POST, 'pass2');
+    private $nombre = filter_input(INPUT_POST, 'name');
+    private $apellido=filter_input(INPUT_POST, 'lastname');
+    private $direccion=filter_input(INPUT_POST, 'andress');
+    private $fecha = filter_input(INPUT_POST, 'date');
+    private $pass = filter_input(INPUT_POST, 'pass1');
+    private $pass2 = filter_input(INPUT_POST, 'pass2');
     
-    
-
     
     if($pass !== $pass2){
         ?><script>
