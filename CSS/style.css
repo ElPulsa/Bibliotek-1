@@ -1,0 +1,124 @@
+
+.cabezera{
+    background: #202C45;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    background: #656565;
+}
+
+.cabezera .logo h1{
+    color: aliceblue;
+}
+.cabezera .menu a,i{
+    text-decoration: none;
+    color: aliceblue;
+}
+.cabezera .menu{
+    text-align: center;
+}
+
+
+/*Codigo de que permite desplegar el menu de la cabezera*/
+.cabezera .menu .dropdown-container{
+    position: relative;
+    color: aliceblue;
+}
+
+.cabezera .menu .dropdown-container ul{
+    position:absolute;
+    color: #202C45;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.cabezera .menu .dropdown-container:hover ul, .cabezera .menu .dropdown-containe:hover ul.show{
+    max-height: 400px;
+    background: aliceblue ;
+}
+
+.infor_1{
+    background: aliceblue;
+    color: #202C45;
+    text-align: center;  
+}
+
+/*Stylos para las tarjetas*/
+.lista_libros_1{
+    text-align: center;
+}
+.lista_libros_1 .tarjetero{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+}
+.lista_libros_1 .tarjetero .tarjeta{
+    width: 330px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0,0.2);
+    background: aliceblue;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.lista_libros_1 .tarjetero .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0,0.2);
+
+}
+
+.lista_libros_1 .tarjetero .tarjeta .img img{
+    height: 300px;
+    border-radius: 5px;
+
+}
+
+/*estilos de la seccion de sobre nosotros*/
+
+.nosotros{
+    text-align: center;
+    background: aliceblue;
+}
+
+/*lista de libros*/
+.lista_libros2{
+    text-align: center;
+    background: aliceblue;
+    
+}
+
+/*Esilos para el formulario #1 */
+.formulrio1{
+    background: aliceblue;
+}
+.formulrio1 .registro{
+    text-align: center;
+    
+}
+
+/*Esilos para el formulario login */
+.formularioLogin{
+    background: aliceblue;
+}
+
+.formularioLogin .login{
+    text-align: center;
+}
+
+/* estilos para para mostrar todos los libros */
+.listaLibro{
+    background: aliceblue;
+}
+
+
+
+
+/*Footer*/
